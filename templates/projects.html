@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects | Vraj Shrimali</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+<style>
+body{
+    background:#111;
+    color:white;
+}
+
+.navbar{
+    background:#000;
+}
+
+.card{
+    background:#1a1a1a;
+    color:white;
+    border:none;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    height:220px;
+    object-fit:cover;
+}
+
+.btn-custom{
+    background:#A06CD5;
+    color:white;
+}
+
+.btn-custom:hover{
+    background:#C099EE;
+    color:white;
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-dark">
+<div class="container">
+    <a href="{{ url_for('home') }}" class="navbar-brand">
+        ← Back To Portfolio
+    </a>
+</div>
+</nav>
+
+<div class="container py-5">
+
+<h1 class="text-center mb-5">
+    My Projects
+</h1>
+
+<div class="row g-4">
+
+    <!-- Global Energy -->
+    <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+            <img src="{{ url_for('static', filename='img/Energy.png') }}">
+            <div class="card-body">
+                <h5>Global Energy Consumption Dashboard</h5>
+                <p>Power BI dashboard analyzing global energy consumption and renewable trends.</p>
+                <a href="https://github.com/vrajs-data/global-energy-consumption-powerbi-dashboard"
+                   target="_blank"
+                   class="btn btn-custom">
+                   View Project
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Airline -->
+    <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+            <img src="{{ url_for('static', filename='img/Airline.png') }}">
+            <div class="card-body">
+                <h5>Indian Airline Price Analysis</h5>
+                <p>Analysis of airline ticket pricing trends across India.</p>
+                <a href="https://github.com/vrajs-data/indian-airline-price-analysis-powerbi"
+                   target="_blank"
+                   class="btn btn-custom">
+                   View Project
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Sales -->
+    <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+            <img src="{{ url_for('static', filename='img/Mobile_dashbaord.png') }}">
+            <div class="card-body">
+                <h5>Mobile Sales Dashboard</h5>
+                <p>Power BI dashboard analyzing mobile sales across cities and brands.</p>
+                <a href="https://github.com/vrajs-data/mobile-sales-analysis-powerbi"
+                   target="_blank"
+                   class="btn btn-custom">
+                   View Project
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Road Accident -->
+    <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+            <img src="{{ url_for('static', filename='img/Road_Accident_Analysis.png') }}">
+            <div class="card-body">
+                <h5>Road Accident Analysis</h5>
+                <p>Power BI dashboard analyzing road accident trends in India.</p>
+                <a href="https://github.com/vrajs-data/India_Road_Accident_Dashboard"
+                   target="_blank"
+                   class="btn btn-custom">
+                   View Project
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- AutoCare -->
+    <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+            <img src="{{ url_for('static', filename='img/Autocare.png') }}">
+            <div class="card-body">
+                <h5>AutoCare</h5>
+                <p>Vehicle Service Booking System built using Python and MySQL.</p>
+                <a href="https://github.com/Vish1428/Autocare.git"
+                   target="_blank"
+                   class="btn btn-custom">
+                   View Project
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Zomato -->
+    <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+            <img src="{{ url_for('static', filename='img/Zomato_Dashboard.png') }}">
+            <div class="card-body">
+                <h5>Zomato Dashboard</h5>
+                <p>Interactive Tableau dashboard for Zomato analytics.</p>
+                <a href="https://public.tableau.com/app/profile/vraj.shrimali/viz/Zomato_17124842666610/Story1"
+                   target="_blank"
+                   class="btn btn-custom">
+                   View Dashboard
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blinkit -->
+    <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+            <img src="{{ url_for('static', filename='img/BlinkIt_Dashboard.png') }}">
+            <div class="card-body">
+                <h5>Blinkit Dashboard</h5>
+                <p>Tableau dashboard with KPIs and ratings insights.</p>
+                <a href="https://public.tableau.com/app/profile/vraj.shrimali/viz/Blinkit_17124774428780/Dashboard1"
+                   target="_blank"
+                   class="btn btn-custom">
+                   View Dashboard
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+
+</body>
+</html>
