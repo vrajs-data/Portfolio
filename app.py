@@ -8,8 +8,10 @@ def home():
 
 @app.route('/projects')
 def projects():
-    # return render_template('projects.html')
-    return "Projects page works!"
+    try:
+        return render_template('projects.html')
+    except Exception as e:
+        return str(e)
 
 @app.route('/test')
 def test():
